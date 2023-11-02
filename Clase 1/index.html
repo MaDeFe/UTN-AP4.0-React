@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seguro No Pagamos Cooperativa</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+    <h1>CONTACTAR UN ASESOR</h1>
     
+    <h2>Complete estos datos y un asesor se comunicará a la brevedad</h2>
+        
+        <form class="formulario">
+            <div>
+                <label>Nombre</label>
+                <input name="nombre" id="nombre" />
+            </div>
+            <div>
+                <label>Apellido</label>
+                <input name="apellido" id="apellido" />
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+            <div>
+                <label>DNI</label>
+                <input name="dni" id="dni" />
+            </div>
+            <div>
+                <label>Teléfono</label>
+                <input name="telefono" id="telefono" />
+            </div>
+            <div>
+                <label>Tipo de Seguro</label>
+                <select id = "option_value" onchange="myFunction()">
+                    <option value="basico">Básico $500</option>
+                    <option value="intermedio">Intermedio $1000</option>
+                    <option value="premium">Premium $1500</option>
+                </select>
+            </div>
+        </form>
+
+        <input type="submit" value="Enviar" />
+
 </body>
+
+
 </html>
